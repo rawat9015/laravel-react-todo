@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { router, useForm } from '@inertiajs/react';
-import { list } from 'postcss';
 
 export default function Todos({ todoList }) {
 
@@ -80,7 +79,7 @@ export default function Todos({ todoList }) {
 
                 <li key={list.id} className="flex justify-between items-center px-5 py-4">
 
-                  <span className="text-base cursor-pointer" onClick={() => handleEdit(list.id, list.title)}>🧠 {list.title}</span>
+                  <span className="text-base cursor-pointer" onClick={() => handleEdit(list.id, list.title)}>{list.title}</span>
 
 
                   <span

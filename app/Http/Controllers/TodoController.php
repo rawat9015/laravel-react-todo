@@ -17,9 +17,10 @@ class TodoController extends Controller
         //
         $todoList = Todo::latest()->get();
 
-        return Inertia::render('Todos',[
+        return  Inertia::render('Todos',[
             'todoList' => $todoList
         ]);
+
     }
 
     /**
